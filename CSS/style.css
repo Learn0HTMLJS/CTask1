@@ -1,6 +1,11 @@
 :root{
-    --AddText_color: #647382;
+    --AddText_color: #AAAAAA;
     --MainText_color: #000000;
+    --Fclr: #FCBF49;
+}
+
+header{
+    background-color: var(--Fclr);
 }
 
 #align{
@@ -8,8 +13,10 @@
 }
 
 #logo{
-    width: 5%;
-    height: 5%;
+    margin: 0 auto;
+    margin-left: 50%;
+    width: 10%;
+    height: 10%;
 }
 
 .link{
@@ -19,6 +26,7 @@
 }
 
 main{
+    margin: 0 auto;
     width: 90%;
 }
 
@@ -27,6 +35,10 @@ p{
     color: var(--MainText_color);
     margin-bottom: 20px;
     margin-top: 10px;
+}
+
+#add{
+    text-align: center;
 }
 
 .Main{
@@ -42,6 +54,11 @@ p{
     flex-direction: column;
 }
 
+.Card:hover{
+    border: 2px;
+    background-color: var(--AddText_color);
+}
+
 #wikilogo{
     width: 10%;
     height: 10%;
@@ -50,4 +67,8 @@ p{
 #Selelogo{
     width: 10%;
     height: 10%;
+}
+
+footer{
+    background-color: var(--Fclr);
 }
