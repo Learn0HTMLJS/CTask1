@@ -5,17 +5,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&display=swap" rel="stylesheet"> 
     <title>Контрольная работа</title>
 </head>
 <body>
     <header>
-        <img src="img\LogoImaje.jpg" alt="Логотип" />
+        <div id="align">
+            <img src="img\LogoImage.jpg" alt="Логотип" id="logo"/>
+        </div>
         <nav>
-
+            <ul>
+                <li> <a href="#Model" class="link"> Модель TCP/IP </a> </li>
+                <li> <a href="#history" class="link"> История </a> </li>
+                <li> <a href="#Levels" class="link"> Уровневая модель TCP/IP </a> </li>
+            </ul>
         </nav>
     </header>
     <main>
-        <h1> Модель TCP/IP </h1>
+        <h1 id="Model"> Модель TCP/IP </h1>
         <p>
             TCP/IP — сетевая модель передачи данных, представленных в цифровом виде. Модель описывает способ передачи данных от источника информации к получателю. 
             В модели предполагается прохождение информации через четыре уровня, каждый из которых описывается правилом (протоколом передачи). Наборы правил, 
@@ -24,7 +34,7 @@
             описаны в данном стандарте. Также изредка упоминается как модель DOD (Department of Defense) в связи с историческим происхождением от сети 
             ARPANET из 1970-х годов (под управлением DARPA, Министерства обороны США). 
         </p>
-        <h2> История </h2>
+        <h2 id="history"> История </h2>
         <p>
             Стек протоколов TCP/IP был создан на основе NCP (Network Control Protocol) группой разработчиков под руководством Винтона Серфа в 1972 году. 
             В июле 1976 года Винт Серф и Боб Кан впервые продемонстрировали передачу данных с использованием TCP по трём различным сетям. 
@@ -36,7 +46,7 @@
         </p>
         <img src="img\Winton.jpg" alt="Винтон Серф" />
         <p> Винтон Серф </p>
-        <h2> Уровневая модель TCP/IP </h2>
+        <h2 id="Levels"> Уровневая модель TCP/IP </h2>
         <p>
             Модель TCP/IP разделена на уровни, как и OSI, но отличие двух моделей в количестве уровней. Документом, регламентирующим уровневую архитектуру модели и 
             описывающий все протоколы, входящие в TCP/IP, является RFC 1122. Стандарт включает четыре уровня модели TCP/IP, хотя, например, согласно Таненбауму 
@@ -80,15 +90,15 @@
             (преобразование символьных имён в IP-адреса) и многие другие.          
             В массе своей эти протоколы работают поверх TCP или UDP и привязаны к определённому порту
         </p>
+        <h1> Дополнительные источники </h1>
         <div class="Main">
-            <h1> Дополнительные источники </h1>
             <div class="Card">
-                <img src="img\wikiped.jpg" alt="Википедия" />
+                <img src="img\wikiped.jpg" alt="Википедия" id="wikilogo" />
                 <p> Википедия </p>
                 <button> <a href="https://ru.wikipedia.org/wiki/TCP/IP"> Читать далее </a> </button>
             </div>
             <div class="Card">
-                <img src="img\Selectel_Logotype.png" alt="Selectel" />
+                <img src="img\Selectel_Logotype.png" alt="Selectel" id="Selelogo" />
                 <p> Википедия </p>
                 <button> <a href="https://selectel.ru/blog/tcp-ip-for-beginners/"> Читать далее </a> </button>
             </div>
